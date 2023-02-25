@@ -47,7 +47,7 @@ public class Car extends Transport<DriverB> {
                 " Модель - " + getModel() + "," +
                 " Мощность двигателя - " + getEngineVolume() + "," +
                 " водитель - " + getDriver().getName() +
-                " Тип кузова - " + bodyTape + " " + getMechanicList();
+                " Тип кузова - " + bodyTape + " механик " + getMechanicList();
 
     }
 
