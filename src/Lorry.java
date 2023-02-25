@@ -51,7 +51,7 @@ public class Lorry extends Transport<DriverC> {
                 " Модель - " + getModel() + "," +
                 " Мощность двигателя - " + getEngineVolume() + "," +
                 " водитель - " + getDriver().getName() +
-                " Грузоподъемностью - " + loadСapacity;
+                " Грузоподъемностью - " + loadСapacity + " " + getMechanicList();
     }
     @Override
     public Type getType() {

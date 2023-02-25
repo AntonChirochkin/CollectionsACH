@@ -7,7 +7,7 @@ public abstract class Transport<T extends Driver> implements Competing {
     private T driver;
     private boolean diagnosticsPassed;
 
-    public List<Mechanic> mechanicList;
+    private List<Mechanic> mechanicList;
 
 
     public String getBrand() {
@@ -93,9 +93,5 @@ public abstract class Transport<T extends Driver> implements Competing {
     public void setDiagnosticsPassed(boolean diagnosticPassed) {
         this.diagnosticsPassed = diagnosticsPassed;
     }
-
-    Mechanic mechanic1 = new Mechanic("Иванов Андрей Петрович", "Гаечный ключ");
-    Mechanic mechanic2 = new Mechanic("Сидоров Юрий Иванович", "Колесо");
-    Mechanic mechanic3 = new Mechanic("Петров Михаил Борисович", "Бора");
 
 }

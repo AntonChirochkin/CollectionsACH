@@ -51,7 +51,7 @@ public class Bus extends Transport<DriverD> {
                 " Модель - " + getModel() + "," +
                 " Мощность двигателя - " + getEngineVolume() + "," +
                 " водитель - " + getDriver().getName() +
-                " Вместительностью салона - " + size;
+                " Вместительностью салона - " + size + " " + getMechanicList();
     }
     @Override
     public Type getType() {
