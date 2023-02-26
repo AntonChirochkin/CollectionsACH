@@ -53,7 +53,7 @@ public abstract class Transport<T extends Driver> implements Competing {
         this.model = model;
         setEngineVolume(engineVolume);
         setDriver(driver);
-        this.mechanicList = this.mechanicList;
+        this.mechanicList = mechanicList;
     }
 
     private void setEngineVolume(double engineVolume) {
@@ -94,17 +94,5 @@ public abstract class Transport<T extends Driver> implements Competing {
         this.diagnosticsPassed = diagnosticsPassed;
     }
 
-    @Override
-    public String toString() {
-        return "Transport{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", engineVolume=" + engineVolume +
-                ", driver=" + driver +
-                ", diagnosticsPassed=" + diagnosticsPassed +
-                ", mechanicList=" + mechanicList +
-                ", diagnosticPassed=" + isDiagnosticPassed() +
-                '}';
-    }
 
 }
