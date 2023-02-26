@@ -17,9 +17,10 @@ public class Main {
         shlyapa.put(new Car("Ауди", "SQ8",435, driverB1, Bodytape.COUPE,List.of(mechanic1)), List.of(mechanic1));
         shlyapa.put(new Car("BMW", "X7",530, driverB2, Bodytape.UNIVERSAL, List.of(mechanic2)),List.of(mechanic2));
         shlyapa.put(new Car("Mersedes", "GLS", 612, driverB3, Bodytape.JEEP, List.of(mechanic3)), List.of(mechanic3));
-        for (Map.Entry<Car, List<Mechanic>> auto: shlyapa.entrySet()) {
-            System.out.println(auto.getKey() + ": " + auto.getValue());
-        }
+        //вывод через for each
+//        for (Map.Entry<Car, List<Mechanic>> auto: shlyapa.entrySet()) {
+//            System.out.println(auto.getKey() + ": " + auto.getValue());
+//        }
 
         Car car = new Car("Audi", "SQ8", 435.0, driverB1, Bodytape.COUPE,List.of(mechanic1));
         Car car2 = new Car("BMV", "X7", 530, driverB2, Bodytape.UNIVERSAL,List.of(mechanic2));
@@ -96,10 +97,16 @@ public class Main {
         drivers.add(new DriverB("Скобочкин Евгений", true,10));
         drivers.add(new DriverB("Черемнов Валерий", true,10));
         drivers.add(new DriverB("Скобочкин Евгений", true, 10));
-
+//        вывод через for each
 //        for (DriverB driverB : drivers) {
-//            System.out.println(driverB.getName());
-//        }
+//            System.out.println(driverB.getName());}
+
+        Iterator<DriverB> jytkayaShlyapa = drivers.iterator();
+        while (jytkayaShlyapa.hasNext()) {
+
+            // Выводим следующий элемент в консоль
+            System.out.println(jytkayaShlyapa.next());
+        }
 
 
     }
