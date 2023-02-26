@@ -51,50 +51,48 @@ public class Main {
 
         //System.out.println(transports);
 
-        Set<DriverB> draivers = new HashSet<>();
-        draivers.add(new DriverB("Полев Игорь", true,10));
-        draivers.add(new DriverB("Полев Игорь", true,10));
-        draivers.add(new DriverB("Полев Игорь", true,10));
-        draivers.add(new DriverB("Кононенко Евгений", true,10));
-        draivers.add(new DriverB("Кононенко Евгений", true,10));
-        draivers.add(new DriverB("Кононенко Евгений", true,10));
-        draivers.add(new DriverB("Полев Игорь", true,10));
-        draivers.add(new DriverB("Макаров Владимир", true,10));
-        draivers.add(new DriverB("Волощук Николай", true,10));
-        draivers.add(new DriverB("Бабичев Дамир", true,10));
-        draivers.add(new DriverB("Волощук Николай", true,10));
-        draivers.add(new DriverB("Башаров Вадим", true,10));
-        draivers.add(new DriverB("Макаров Владимир", true,10));
-        draivers.add(new DriverB("Макаров Владимир", true,10));
-        draivers.add(new DriverB("Башаров Вадим", true,10));
-        draivers.add(new DriverB("Тарин Денис", true,10));
-        draivers.add(new DriverB("Антропов Александр", true,10));
-        draivers.add(new DriverB("Тарин Денис", true,10));
-        draivers.add(new DriverB("Черемнов Валерий", true,10));
-        draivers.add(new DriverB("Тарин Денис", true,10));
-        draivers.add(new DriverB("Бабичев Дамир", true,10));
-        draivers.add(new DriverB("Башаров Вадим", true,10));
-        draivers.add(new DriverB("Антропов Александр", true,10));
-        draivers.add(new DriverB("Скобочкин Евгений", true,10));
-        draivers.add(new DriverB("Волощук Николай", true,10));
-        draivers.add(new DriverB("Антропов Александр", true,10));
-        draivers.add(new DriverB("Столяров Сергей", true,10));
-        draivers.add(new DriverB("Черемнов Валерий", true,10));
-        draivers.add(new DriverB("Бабичев Дамир", true,10));
-        draivers.add(new DriverB("Скобочкин Евгений", true,10));
-        draivers.add(new DriverB("Столяров Сергей", true,10));
-        draivers.add(new DriverB("Скобочкин Евгений", true,10));
-        draivers.add(new DriverB("Черемнов Валерий", true,10));
-        draivers.add(new DriverB("Столяров Сергей", true,10));
-        draivers.add(new DriverB("Черемнов Валерий", true,10));
-        draivers.add(new DriverB("Скобочкин Евгений", true,10));
-        draivers.add(new DriverB("Черемнов Валерий", true,10));
-        draivers.add(new DriverB("Скобочкин Евгений", true, 10));
+        Set<DriverB> drivers = new HashSet<>();
+        drivers.add(new DriverB("Полев Игорь", true,10));
+        drivers.add(new DriverB("Полев Игорь", true,10));
+        drivers.add(new DriverB("Полев Игорь", true,10));
+        drivers.add(new DriverB("Кононенко Евгений", true,10));
+        drivers.add(new DriverB("Кононенко Евгений", true,10));
+        drivers.add(new DriverB("Кононенко Евгений", true,10));
+        drivers.add(new DriverB("Полев Игорь", true,10));
+        drivers.add(new DriverB("Макаров Владимир", true,10));
+        drivers.add(new DriverB("Волощук Николай", true,10));
+        drivers.add(new DriverB("Бабичев Дамир", true,10));
+        drivers.add(new DriverB("Волощук Николай", true,10));
+        drivers.add(new DriverB("Башаров Вадим", true,10));
+        drivers.add(new DriverB("Макаров Владимир", true,10));
+        drivers.add(new DriverB("Макаров Владимир", true,10));
+        drivers.add(new DriverB("Башаров Вадим", true,10));
+        drivers.add(new DriverB("Тарин Денис", true,10));
+        drivers.add(new DriverB("Антропов Александр", true,10));
+        drivers.add(new DriverB("Тарин Денис", true,10));
+        drivers.add(new DriverB("Черемнов Валерий", true,10));
+        drivers.add(new DriverB("Тарин Денис", true,10));
+        drivers.add(new DriverB("Бабичев Дамир", true,10));
+        drivers.add(new DriverB("Башаров Вадим", true,10));
+        drivers.add(new DriverB("Антропов Александр", true,10));
+        drivers.add(new DriverB("Скобочкин Евгений", true,10));
+        drivers.add(new DriverB("Волощук Николай", true,10));
+        drivers.add(new DriverB("Антропов Александр", true,10));
+        drivers.add(new DriverB("Столяров Сергей", true,10));
+        drivers.add(new DriverB("Черемнов Валерий", true,10));
+        drivers.add(new DriverB("Бабичев Дамир", true,10));
+        drivers.add(new DriverB("Скобочкин Евгений", true,10));
+        drivers.add(new DriverB("Столяров Сергей", true,10));
+        drivers.add(new DriverB("Скобочкин Евгений", true,10));
+        drivers.add(new DriverB("Черемнов Валерий", true,10));
+        drivers.add(new DriverB("Столяров Сергей", true,10));
+        drivers.add(new DriverB("Черемнов Валерий", true,10));
+        drivers.add(new DriverB("Скобочкин Евгений", true,10));
+        drivers.add(new DriverB("Черемнов Валерий", true,10));
+        drivers.add(new DriverB("Скобочкин Евгений", true, 10));
 
-        System.out.println(draivers);
-
-
-
+        for (DriverB driverB : drivers) {
+            System.out.println(driverB.getName());
+        }
     }
-
 }
