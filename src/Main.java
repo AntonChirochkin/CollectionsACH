@@ -9,11 +9,12 @@ public class Main {
         Mechanic mechanic2 = new Mechanic("Сидоров Юрий Иванович", "ООО Колесо");
         Mechanic mechanic3 = new Mechanic("Петров Михаил Борисович", "ООО Бора");
 
-
-
         DriverB driverB1 = new DriverB("Иван cat. B ", true, 5);
         DriverB driverB2 = new DriverB("Владимир cat. B ", true, 5);
         DriverB driverB3 = new DriverB("Сергей cat. B ", true, 5);
+
+        Map<Car, Mechanic> shlyapa = new HashMap<>();
+        shlyapa.put(new Car("Ауди", "SQ8",435, driverB2, Bodytape.COUPE, List.of(mechanic1)));
 
         Car car = new Car("Audi", "SQ8", 435.0, driverB1, Bodytape.COUPE,List.of(mechanic1));
         Car car2 = new Car("BMV", "X7", 530, driverB2, Bodytape.UNIVERSAL,List.of(mechanic2));
@@ -94,5 +95,7 @@ public class Main {
         for (DriverB driverB : drivers) {
             System.out.println(driverB.getName());
         }
+
+
     }
 }

@@ -8,7 +8,6 @@ public class Car extends Transport<DriverB> {
         this.bodyTape = bodyTape;
     }
 
-
     @Override
     public void start() {
         System.out.println("Автомобиль марки " + getBrand() + " начал движение.");
@@ -47,7 +46,7 @@ public class Car extends Transport<DriverB> {
                 " Модель - " + getModel() + "," +
                 " Мощность двигателя - " + getEngineVolume() + "," +
                 " водитель - " + getDriver().getName() +
-                " Тип кузова - " + bodyTape + " механик " + getMechanicList();
+                " Тип кузова - " + bodyTape + " " + getMechanicList();
 
     }
 
