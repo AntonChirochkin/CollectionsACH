@@ -18,4 +18,9 @@ public class DriverB extends Driver {
         System.out.println("Водитель категории B " + getName() + " заправляет автомобиль.");
 
     }
+
+    @Override
+    public String toString () {
+        return "Водитель: " + getName() + " " + isDriverLicense() + " " + getExperienceInYear();
+    }
 }

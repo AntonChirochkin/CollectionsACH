@@ -1,7 +1,6 @@
 import jdk.internal.jimage.ImageStrings;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -50,9 +49,50 @@ public class Main {
         transports.add(lorry3);
 
 
+        //System.out.println(transports);
 
+        Set<DriverB> draivers = new HashSet<>();
+        draivers.add(new DriverB("Полев Игорь", true,10));
+        draivers.add(new DriverB("Полев Игорь", true,10));
+        draivers.add(new DriverB("Полев Игорь", true,10));
+        draivers.add(new DriverB("Кононенко Евгений", true,10));
+        draivers.add(new DriverB("Кононенко Евгений", true,10));
+        draivers.add(new DriverB("Кононенко Евгений", true,10));
+        draivers.add(new DriverB("Полев Игорь", true,10));
+        draivers.add(new DriverB("Макаров Владимир", true,10));
+        draivers.add(new DriverB("Волощук Николай", true,10));
+        draivers.add(new DriverB("Бабичев Дамир", true,10));
+        draivers.add(new DriverB("Волощук Николай", true,10));
+        draivers.add(new DriverB("Башаров Вадим", true,10));
+        draivers.add(new DriverB("Макаров Владимир", true,10));
+        draivers.add(new DriverB("Макаров Владимир", true,10));
+        draivers.add(new DriverB("Башаров Вадим", true,10));
+        draivers.add(new DriverB("Тарин Денис", true,10));
+        draivers.add(new DriverB("Антропов Александр", true,10));
+        draivers.add(new DriverB("Тарин Денис", true,10));
+        draivers.add(new DriverB("Черемнов Валерий", true,10));
+        draivers.add(new DriverB("Тарин Денис", true,10));
+        draivers.add(new DriverB("Бабичев Дамир", true,10));
+        draivers.add(new DriverB("Башаров Вадим", true,10));
+        draivers.add(new DriverB("Антропов Александр", true,10));
+        draivers.add(new DriverB("Скобочкин Евгений", true,10));
+        draivers.add(new DriverB("Волощук Николай", true,10));
+        draivers.add(new DriverB("Антропов Александр", true,10));
+        draivers.add(new DriverB("Столяров Сергей", true,10));
+        draivers.add(new DriverB("Черемнов Валерий", true,10));
+        draivers.add(new DriverB("Бабичев Дамир", true,10));
+        draivers.add(new DriverB("Скобочкин Евгений", true,10));
+        draivers.add(new DriverB("Столяров Сергей", true,10));
+        draivers.add(new DriverB("Скобочкин Евгений", true,10));
+        draivers.add(new DriverB("Черемнов Валерий", true,10));
+        draivers.add(new DriverB("Столяров Сергей", true,10));
+        draivers.add(new DriverB("Черемнов Валерий", true,10));
+        draivers.add(new DriverB("Скобочкин Евгений", true,10));
+        draivers.add(new DriverB("Черемнов Валерий", true,10));
+        draivers.add(new DriverB("Скобочкин Евгений", true, 10));
 
-        System.out.println();
+        System.out.println(draivers);
+
 
 
     }
