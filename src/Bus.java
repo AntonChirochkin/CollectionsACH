@@ -62,13 +62,13 @@ public class Bus extends Transport<DriverD> {
         System.out.println(getBrand() + " " + getModel() + " " + size);
     }
 
-    //    @Override
-//    public boolean diagnostics() throws TransportTypeException {
-//        throw new TransportTypeException("");
-//    }
     @Override
-    public boolean passDiagnostics() throws TransportTypeException {
+    public void passDiagnostics() throws TransportTypeException {
         throw new TransportTypeException("Автобусы диагностику проходить не должны");
+    }
+    @Override
+    public boolean checkAbilityToGoInspection() {
+        return false;
     }
 }
 

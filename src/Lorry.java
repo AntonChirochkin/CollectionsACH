@@ -61,9 +61,15 @@ public class Lorry extends Transport<DriverC> {
     public void printTipe() {
         System.out.println(getBrand() + " " + getModel() + " " + loadСapacity);
     }
+
     @Override
-    public boolean passDiagnostics() {
-        return this.isDiagnosticsPassed();
+    public void passDiagnostics() {
+        System.out.println("Грузовому автомобилю " + getBrand() + " " + getModel() + " необходимо пройти диагностику");
+    }
+
+    @Override
+    public boolean checkAbilityToGoInspection() {
+        return true;
     }
 }
 

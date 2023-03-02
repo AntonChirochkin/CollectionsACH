@@ -62,10 +62,15 @@ public class Car extends Transport<DriverB> {
     }
 
     @Override
-    public boolean passDiagnostics() {
-        return this.isDiagnosticsPassed();
+    public void passDiagnostics() {
+        System.out.println("Легковому автомобилю " + getBrand() + " " + getModel() + " необходимо пройти диагностику");
+    }
+    @Override
+    public boolean checkAbilityToGoInspection() {
+        return true;
     }
 }
+
 
 enum Bodytape {
     SEDAN("СЕДАН"),

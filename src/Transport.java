@@ -84,7 +84,7 @@ public abstract class Transport<T extends Driver> implements Competing {
         return true;
     }
 
-    abstract boolean passDiagnostics() throws TransportTypeException;
+    abstract void passDiagnostics() throws TransportTypeException;
 
     public boolean isDiagnosticPassed() {
         return diagnosticsPassed;
@@ -93,6 +93,9 @@ public abstract class Transport<T extends Driver> implements Competing {
     public void setDiagnosticsPassed(boolean diagnosticPassed) {
         this.diagnosticsPassed = diagnosticsPassed;
     }
+
+    public abstract boolean checkAbilityToGoInspection();
+
 
 
 }
